@@ -37,7 +37,7 @@ app.put('/api/user/savings', (request, response) => {
 })
 
 app.get('/*', (request, response) => {
-  response.end(200, 'Service ready');
+  response.end('Service ready');
 })
 
 app.listen(port, () => {
