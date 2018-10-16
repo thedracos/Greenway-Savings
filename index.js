@@ -36,6 +36,10 @@ app.put('/api/user/savings', (request, response) => {
   })
 })
 
+app.get('/*', (request, response) => {
+  response.end(200, 'Service ready');
+})
+
 app.listen(port, () => {
   console.log(`Server listening on port: ${port}`);
 });
